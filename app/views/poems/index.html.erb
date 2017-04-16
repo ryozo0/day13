@@ -18,9 +18,9 @@
         <td><%= poem.title %></td>
         <td><%= poem.content %></td>
         <td><%= poem.auther %></td>
-        <td><%= link_to 'Show', poem %></td>
-        <td><%= link_to 'Edit', edit_poem_path(poem) %></td>
-        <td><%= link_to 'Destroy', poem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', poem_path(poem.id) %></td>
+        <td><%= link_to 'Edit', edit_poem_path(poem.id) %></td>
+        <td><%= link_to 'Destroy', poem_path(poem.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
